@@ -1,0 +1,71 @@
+{{#partial "content"}}
+    <div class="container my-3" id="nav">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav container col-md-4">
+                    <a class="nav-item nav-link active" href="/">HOME</a>
+                    <a class="nav-item nav-link" href="/about">ABOUT</a>
+                    <a class="nav-item nav-link" href="/services">SERVICES</a>
+                    <a class="nav-item nav-link" href="/contacts">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <pre>
+        <br>
+    </pre>
+
+<div class="container mt-3">
+    <h2 class="fw-bold">Billing Details</h2>
+    <form action="" method="post">
+        <div class="mb-3 mt-3">
+            <label for="sel1" class="form-label">Select service:</label>
+            <select class="form-select" id="sel1" name="sellist1">
+                <option>IT Consulting</option>
+                <option>Cloud Computing</option>
+                <option>Web Development</option>
+                <option>Data Analysis</option>
+                <option>Mobile App Development</option>
+                <option>Business Reform</option>
+                <option>Data Analysis</option>
+            </select>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="hours">Hours:</label>
+            <input type="number" class="form-control" id="hours" placeholder="Enter hours" name="hours"required>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="user_id">User ID:</label>
+            <input type="number" class="form-control" id="user_id" value="{{clients.id}}" name="user_id" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<pre>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </pre>
+<style>
+         #nav{
+           position: fixed;
+           top:0;
+           width:100%;
+           z-index: 1;
+           }
+         .fw-bold{
+           font-family: 'Acme', sans-serif;
+          }
+</style>
+
+{{/partial}}
+
+{{> layout.hbs}}

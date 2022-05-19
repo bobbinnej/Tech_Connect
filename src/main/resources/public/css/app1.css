@@ -96,6 +96,114 @@
 }
 
 
+.success-card{
+display:flex;
+align-items:center ;
+margin-top:30px;
+background-color: #000075;
+
+}
+
+.card-link{
+text-decoration:none;
+color:white;
+}
+.request-service{
+background-color: transparent;
+font-family: 'Acme', sans-serif;
+font-size: 30px;
+color:white;
+width:400px;
+height:70px;
+border-radius:12px;
+border:2px solid white;
+
+}
+.request-service:hover{
+background-color:grey;
+
+}
+.success-message{
+font-family: 'Acme', sans-serif;
+}
+.success-content{
+color:white;
+font-family: 'Acme', sans-serif;
+margin-left:1%;
+}
+.success-labels{
+color:white;
+font-weight:bold;
+font-family: 'Acme', sans-serif;
+}
+
+#success-image{
+height:300px;
+margin-left:35%;
+margin-top:-10%;
+
+ animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+
+}
+.animate__animated.animate__lightSpeedInLeft {
+  --animate-duration: 10s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.billingsuccess-card{
+display:flex;
+align-items:center ;
+margin-top:30px;
+margin-left:40px;
+background-color: #000075;
+padding-top:5%;
+padding-bottom:5%;
+
+}
+
+.typewrite{
+margin-top:1%;
+margin-left:30%;
+text-decoration:none;
+font-family: 'Acme', sans-serif;
+font-size:30px;
+}
+#success-title{
+margin-top:14%;
+margin-left:40%;
+}
+
+#billingsuccess-image{
+
+margin-top:-1%;
+height:330px;
+margin-left:40px;
+display:flex;
+margin-bottom:-25%;
+
+}
+#success-tick{
+height:100px;
+margin-top:-1%;
+margin-bottom:2%;
+display:flex;
+margin-left:-40px;
+
+}
+.success-content1{
+color:white;
+font-family: 'Acme', sans-serif;
+margin-left:24%;
+}
+
+
 
 
 

@@ -27,7 +27,7 @@ public class App {
         staticFileLocation("/public");
 
         String connectionString = "jdbc:postgresql://localhost:5432/tech_connect";
-        Sql2o sql2o = new Sql2o(connectionString, "nina", "kabila");
+        Sql2o sql2o = new Sql2o(connectionString, "postgres", "1870691bbn");
 
         Sql2oClientDao clientDao = new Sql2oClientDao(sql2o);
         Sql2oServiceDao serviceDao = new Sql2oServiceDao(sql2o);

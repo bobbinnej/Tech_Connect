@@ -4,7 +4,7 @@
 }
 .logo{
  height:40px ;
- margin-left:3% ;
+ margin-left:-4%;
 }
 .logo-title{
    color:white;
@@ -47,9 +47,7 @@
      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
  }
 
-.hello{
-  margin-top:10%
-}
+
 .instagram{
   height:40px;
   color:white;
@@ -85,6 +83,18 @@
  text-decoration:underline;
  color:white;
 }
+
+.footer-logo{
+  height:30px ;
+  margin-left:75%;
+
+}
+.footer-title{
+ font-size:20px;
+}
+.footer-content{
+}
+
 
 
 

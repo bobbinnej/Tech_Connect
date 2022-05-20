@@ -203,7 +203,64 @@ font-family: 'Acme', sans-serif;
 margin-left:24%;
 }
 
+.form{
+margin-top:10%;
+}
+.info-column{
+background-color: #000075;
+font-family: 'Acme', sans-serif;
+color:white;
+height:800px;
 
+paddding-top:10%;
+}
+.btn-primary{
+background-color: #000075;
+font-family: 'Acme', sans-serif;
+font-size: 30px;
+color:white;
+width:400px;
+margin-left:150px;
+margin-top:5%;
+border-radius:12px;
+border:2px solid white;
+}
+.btn-primary:hover{
+background-color:grey;
+}
+
+.form-label{
+font-weight:bold;
+color:#000075;
+}
+.form-control{
+border: 1px solid  #000075 ;
+}
+.form-select{
+border: 1px solid  #000075 ;
+}
+.input:placeholder{
+color: black !important;
+font-weight:bold;
+font-family: 'Acme', sans-serif;
+}
+
+.form-control::placeholder {
+    color:black;
+
+  }
+
+.logo1{
+height:40px ;
+ margin-left:35%;
+ margin-bottom:5%;
+
+}
+
+.client-message{
+margin-top:2%;
+margin-bottom:2%;
+}
 
 
 

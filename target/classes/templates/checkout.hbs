@@ -1,5 +1,5 @@
 {{#partial "content"}}
-    <div class="container my-3" id="nav">
+    <div class="container mb-3" id="nav">
         <nav class="navbar navbar-expand-lg bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,10 +18,24 @@
     <pre>
         <br>
     </pre>
+
+
+    <div class="success-image">
+        <img src="/images/agreement.png" id="billingsuccess-image" >
+    </div>
 <div class="container mt-3">
-    <h2 class="fw-bold">Success!</h2>
-    <p>Your order was successful.</p>
-    <p>Total Price: Ksh.<span>{{total}}</span></p>
+    <h2 class="fw-bold" id="success-title">Success!</h2>
+    <p class="success-message typing-text" id="success-message">
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Your order was successful." ]'>
+            <span class="wrap"></span>  </a>
+    </p>
+
+
+    <div class="card  billingsuccess-card">
+        <img src="/images/checked.png" id="success-tick" >
+        <p class=" success-labels">Total Price Ksh: <span class="success-content1" >{{total}}</span></p>
+    </div>
+
 </div>
 <pre>
         <br>

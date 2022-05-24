@@ -1,5 +1,5 @@
 {{#partial "content"}}
-    <div class="container my-3" id="nav">
+    <div class="container mb-3" id="nav">
         <nav class="navbar navbar-expand-lg bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,22 +19,45 @@
         <br>
     </pre>
 <div class="container mt-5">
-    <h2 class="fw-bold">Client Details</h2>
-    <form action="" method="post">
-        <div class="mb-3 mt-3">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+    <h2 class="fw-bold text-center">Client Details</h2>
+
+    <div class="row" >
+
+        <div class="col-md-2 info-column">
+            <hr class="horizontal-client">
+            <h5 class="client-info">Dear customer, <br> input your details so that a tech connect<br> professional can reach out to you in <br>
+            regards to your appointment</h5>
+
+            <hr class="low-horizontal-col">
         </div>
-        <div class="mb-3 mt-3">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        <div class="col-md-8">
+
+            <form action="" method="post" class="form">
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="contact" class="form-label">Contact:</label>
+                    <input type="text" class="form-control" id="contact" placeholder="Enter contact" name="contact" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="mb-3 mt-3">
-            <label for="contact">Contact:</label>
-            <input type="text" class="form-control" id="contact" placeholder="Enter contact" name="contact" required>
+        <div class="col-md-2 info-column">
+            <hr>
+            <img src="/images/logo.png" class="logo1">
+            <br>
+            <h5 class="client-message">Let Tech Connect transform<br> your idea into functional code.</h5>
+
+            <hr>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+
 </div>
     <pre>
         <br>

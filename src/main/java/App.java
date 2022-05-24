@@ -25,14 +25,14 @@ public class App {
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
-        String connectionString = "jdbc:postgresql://localhost:5432/tech_connect";
-       Sql2o sql2o = new Sql2o(connectionString, "postgres", "1870691bbn");
+        // String connectionString = "jdbc:postgresql://localhost:5432/tech_connect";
+       //Sql2o sql2o = new Sql2o(connectionString, "postgres", "1870691bbn");
 
-        //String connectionString = "jdbc:postgresql://ec2-3-231-82-226.compute-1.amazonaws.com:5432/db6gvnib9ucml0";
-       // Sql2o sql2o = new Sql2o(connectionString, "robbiozxhrrgyb", "14203875c3c1991e3bb629aa164151b7a3091a704391829d0e11296bfe91f406");
+      String connectionString = "jdbc:postgresql://ec2-3-231-82-226.compute-1.amazonaws.com:5432/db6gvnib9ucml0";
+       Sql2o sql2o = new Sql2o(connectionString, "robbiozxhrrgyb", "14203875c3c1991e3bb629aa164151b7a3091a704391829d0e11296bfe91f406");
 
-        Sql2oClientDao clientDao = new Sql2oClientDao(sql2o);
-        Sql2oServiceDao serviceDao = new Sql2oServiceDao(sql2o);
+       Sql2oClientDao clientDao = new Sql2oClientDao(sql2o);
+       Sql2oServiceDao serviceDao = new Sql2oServiceDao(sql2o);
 
         //route to take us to homepage
         get("/",(request,respond)->{

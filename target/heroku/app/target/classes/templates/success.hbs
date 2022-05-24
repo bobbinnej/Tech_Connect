@@ -1,6 +1,6 @@
 {{#partial "content"}}
-    <div class="container my-3" id="nav">
-        <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container mb-3" id="nav">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,14 +21,18 @@
 
 <div class="container mt-3">
     <h2 class="fw-bold">Success!</h2>
-    <p>Your information has been recieved successfuly.</p>
-    <div class="card">
+    <p class="success-message">Your information has been recieved successfuly.</p>
+
+    <div class="success-image">
+        <img src="/images/cheers.png" id="success-image" animate__animated animate__animate__lightSpeedInLeft>
+    </div>
+    <div class="card  success-card">
         {{#if clients}}
             <div class="card-body">
-                <h4 class="card-title">{{clients.name}}</h4>
-                <p class="card-text">Email: <span>{{clients.email}}</span></p>
-                <p class="card-text">Contact: <span>{{clients.contact}}</span></p>
-                <a href="/clients/{{clients.id}}/services/new" class="card-link">Add Service</a>
+                <p class="card-title success-labels">Name:<span class="success-content">{{clients.name}}</span></p>
+                <p class="card-text success-labels">Email: <span class="success-content">{{clients.email}}</span></p>
+                <p class="card-text success-labels">Contact: <span class="success-content">{{clients.contact}}</span></p>
+                <a href="/clients/{{clients.id}}/services/new" class="card-link"><button class="request-service">Request a Service</button></a>
             </div>
         {{/if}}
     </div>
